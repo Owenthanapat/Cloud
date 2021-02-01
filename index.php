@@ -39,7 +39,7 @@ else
             <!-- add mysql connection here -->
             <?php
             $conn = new mysqli(
-                'ec2-13-228-78-103.ap-southeast-1.compute.amazonaws.com',
+                'ec2-52-77-237-16.ap-southeast-1.compute.amazonaws.com',
                 'root',
                 'new-password',
                 'ebdb'
