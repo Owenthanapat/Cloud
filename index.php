@@ -39,7 +39,7 @@ else
             <!-- add mysql connection here -->
             <?php
             $conn = new mysqli(
-                'ec2-52-77-237-16.ap-southeast-1.compute.amazonaws.com',
+                'ec2-52-221-197-218.ap-southeast-1.compute.amazonaws.com',
                 'root',
                 'new-password',
                 'ebdb'
@@ -50,7 +50,7 @@ else
             }
             // clean up table first
             $result = $conn->query("TRUNCATE user");
-            for ($a = 0; $a <= 10000; $a++) {
+            for ($a = 0; $a <= 1000; $a++) {
                 $user = "'user" . $a . "'";
                 $result = $conn->query("INSERT into user (id, username) VALUES ($a,$user)");
             }
